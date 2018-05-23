@@ -37,3 +37,14 @@ class Node {
       }
     }
   }
+  
+  
+  public void printInOrder() {
+    if (left != null) {
+      left.printInOrder();
+    }
+    system.out.println(data);
+    if (right != null) {
+      right.printInOrder();
+    }
+  }
